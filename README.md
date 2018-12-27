@@ -288,11 +288,11 @@ Operation
 
 The state of the sensor is controlled by interrupt. Not only the state of the sensor but also the point in time of activation is stored.
 If the sensor is still in the activated state after the debounce period has passed the Sensor Message is sent. 
-<<<<<<< HEAD
+
 The state of the sensor will change to "inactive" by interrupt. After the minimum activation time has passed this inactive state is signalled 
-=======
+
 The state of the sensor will change to "inactive" by interrupt. After the minimum activation counts has passed this inactive state is signalled 
->>>>>>> master
+
 with a Sensor Message.
 
 Interrupt reacts on changes to drive the sensor state.
@@ -329,7 +329,6 @@ Each module has its own configuration webserver on a shared WiFi configuration n
 
 The websever is based on the "EmbAJAX" library. This library facilitates dataexchange between webserver on the decoder
 and a browser on a client. The user experience is as much as possible comparable with webservers on PC like hardware.
-<<<<<<< HEAD
 
 Configuration data and servo angles are stored in EEPROM.
 Allocation of EEPROM memory to variables has to be planned.
@@ -355,7 +354,6 @@ Allocation of EEPROM memory to variables has to be planned.
   
   GENERALOFFSET + SSIDOFFSET + PWDOFFSET + IPOFFSET + OUTPUTOFFSET + 0 .. 8 Switch active puls length
   
-=======
 
 Configuration data and servo angles are stored in EEPROM.
 Allocation of EEPROM memory to variables has to be planned.
@@ -381,7 +379,6 @@ Allocation of EEPROM memory to variables has to be planned.
   
   GENERALOFFSET + SSIDOFFSET + PWDOFFSET + IPOFFSET + OUTPUTOFFSET + 0 .. 8 Switch active puls length 
   
->>>>>>> master
   GENERALOFFSET + SSIDOFFSET + PWDOFFSET + IPOFFSET + OUTPUTOFFSET + PULSLENGTHOFFSET+ 0 .. 8 Output sensor message
 
   GENERALOFFSET      - 20
@@ -399,16 +396,8 @@ There are two ways to transfer Software to the decoder.
 Via USB cable and after inital software installation also "Over The Air"(OTA).
 Each decoder has its own OTA name which is generated outof "ELTRACO" and the decoderId.
 
-<<<<<<< HEAD
+
 
 Author: E. Postma
 
 November 2018
-
-
-=======
-
-Author: E. Postma
-
-November 2018
->>>>>>> master
